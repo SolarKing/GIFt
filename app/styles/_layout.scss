@@ -1,0 +1,12 @@
+
+// application.hbs
+$app_bar_height: 60px;
+$app_bar_background_color: white;
+
+$side_bar_width: 300px;
+$side_bar_background_color: #FFAE01;
+
+@import "layout/appBar";
+@import "layout/mainView";
+@import "layout/createGIFt";
+@import "layout/chat_messages";

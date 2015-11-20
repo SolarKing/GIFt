@@ -1,0 +1,82 @@
+.create-GIFt {
+  // struct
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  bottom: 0;
+  // style
+  background: white;
+
+  .type-message {
+    // struct
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    // style
+    border-top: thin #bbb solid;
+
+    &-logo {
+      // struct
+      position: absolute;
+      left: 0;
+      height: 70px;
+      width: 70px;
+      // style
+      font-family: "IcoMoon";
+    }
+
+    &-text {
+      // struct
+      display: inline-block;
+      position: absolute;
+      left: 70px;
+      right: 100px;
+      height: 70px;
+      margin: 0;
+      //box-sizing: border-box;
+      width: auto;
+      // style
+
+      input {
+        // struct
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        font-size: 18px;
+        // style
+        border: none;
+        color: #434343;
+      }
+    }
+
+    .type-message-submit {
+      // struct
+      position: absolute;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      // style
+      background: none;
+      color: #434343;
+      text-decoration: none;
+      border: none;
+
+      &:hover {
+        // struct
+
+        // style
+        background: #434343;
+        color: white;
+      }
+
+    }
+  }
+
+
+}

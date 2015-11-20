@@ -1,0 +1,74 @@
+.account_box {
+  // struct
+  padding: 30px;
+  margin: 30px auto;
+  width: 300px;
+  // style
+  background: white;
+  border-radius: 5px;
+
+  .form_header {
+    // struct
+    margin: 0;
+    margin-bottom: 20px;
+    // style
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .input_section {
+    // struct
+    margin-bottom: 20px;
+    // style
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .input_label {
+      // struct
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      letter-spacing: 1px;
+      // style
+    }
+
+    .input_field {
+      // struct
+      display: block;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 16px;
+      // style
+      border: #ccc 2px solid;
+    }
+
+    .submit_account {
+      // struct
+      margin-top: 30px;
+      display: block;
+      width: 100%;
+      height: 60px;
+      font-size: 18px;
+      border-radius: 5px;
+      // style
+      background: $side_bar_background_color;
+      color: #434343;
+      font-weight: bold;
+      border: none;
+
+    }
+  }
+
+}
+
+
+.alt_background_wrapper {
+  // struct
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  // style
+  background: #434343;
+  background:transparent url('/imgs/footer_lodyas.png');
+}

@@ -1,0 +1,17 @@
+// config
+$background_color: #eee;
+
+@import "fonts";
+@import "icons";
+
+// mixins
+@import "mixins";
+
+// smacss
+
+
+@import "base";
+@import "layout";
+@import "modules";
+@import "state";
+@import "theme";

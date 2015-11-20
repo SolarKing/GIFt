@@ -1,0 +1,21 @@
+
+#chat-main-view {
+  // struct
+  position: absolute;
+  left: $side_bar_width;
+  right:0;
+  bottom: 0;
+  top: 0;
+  // style
+  background: #efefef;
+
+  #chat-messages {
+    // struct
+    position: absolute;
+    top: 0;
+    bottom: 200px;
+    width: 100%;
+    // style
+    overflow: auto;
+  }
+}

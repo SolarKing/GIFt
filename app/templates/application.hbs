@@ -1,3 +1,19 @@
-<h2 id="title">Welcome to Ember</h2>
+<header id="app-bar">
+  <div id="app-bar-logo">
+    <img src="imgs/gift_logo.png" alt="GIFt Logo" />
+  </div>
+  <div id="app-bar-link-scroll">
+    <div id="app-bar-link-wrapper">
+      {{#link-to 'about' class="app-bar-link"}}About{{/link-to}}
+      {{#link-to 'chat' class="app-bar-link"}}Chat{{/link-to}}
+      {{#link-to 'signup' class="app-bar-link"}}Sign Up{{/link-to}}
+      {{#link-to 'login' class="app-bar-link"}}Login{{/link-to}}
+      {{#link-to 'index' class="app-bar-link"}}Blank{{/link-to}}
+    </div>
+  </div>
 
-{{outlet}}
+</header>
+
+<main id="main-view">
+  {{outlet}}
+</main>

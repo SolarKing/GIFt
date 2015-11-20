@@ -1,0 +1,75 @@
+
+#app-bar {
+  // struct
+  position: fixed;
+  height: $app_bar_height;
+  width: 100%;
+  top: 0;
+  // style
+  background: $app_bar_background_color;
+
+  &-logo {
+    // struct
+    width: $side_bar_width;
+    float: left;
+    height: $app_bar_height;
+    // style
+
+    img {
+      // struct
+      display: block;
+      height: $app_bar_height + 30px;
+      margin: -15px auto 0;
+      // style
+    }
+  }
+
+  #app-bar-link-scroll {
+    // struct
+    position: absolute;
+    right: 0;
+    left: $side_bar_width;
+    max-height: $app_bar_height;
+    height: 100%;
+    // style
+    overflow: visible;
+    overflow-y: hidden;
+  }
+
+  #app-bar-link-wrapper {
+    // struct
+    max-height: $app_bar_height;
+    height: 100%;
+    width: 450px;
+    //white-space: nowrap;
+    // style
+  }
+
+  .app-bar-link {
+    // struct
+    float: left;
+    height: $app_bar_height;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    // style
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #343434;
+    font-family: "Roboto Condensed", sans-serif;
+
+    &:hover {
+      // struct
+      // style
+      background: #434343;
+      color: white;
+    }
+
+    &.active {
+      // struct
+      // style
+      border-bottom: 5px $side_bar_background_color solid;
+    }
+  }
+}

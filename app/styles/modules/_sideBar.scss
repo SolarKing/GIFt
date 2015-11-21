@@ -1,7 +1,12 @@
 .side-bar {
   // struct
+  position: relative;
   width: $side_bar_width;
   height: 100%;
+  z-index:800;
+  float: left;
   // style
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   background: $side_bar_background_color;
+
 }

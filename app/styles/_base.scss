@@ -19,3 +19,7 @@ input {
   font-family: 'Roboto', sans-serif;
   color: #434343;
 }
+
+input:focus, textarea:focus {
+    outline: none;
+}

@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self' http:",
       'font-src': "'self' data: https:",
       'connect-src': "'self' ws:",
-      'img-src': "'self'",
+      'img-src': "'self' http: https:",
       'style-src': "'self' https:",
       'media-src': "'self'"
     }

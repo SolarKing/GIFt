@@ -11,12 +11,12 @@
   .type-message {
     // struct
     position: absolute;
-    bottom: 0;
+    top: 0;
     right: 0;
     left: 0;
     height: 70px;
     // style
-    border-top: thin #c4c4c4 solid;
+    border-bottom: thin #c4c4c4 solid;
     //box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 
     &-logo {

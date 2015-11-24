@@ -1,6 +1,6 @@
 
 # GIFt
-A social messing app using nothing but GIFs!!!
+A social messaging app using nothing but GIFs!!!
 
 ## Prerequisites
 

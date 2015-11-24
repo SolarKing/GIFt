@@ -16,6 +16,8 @@
     border-radius: 7px 0 7px 7px;
     // style
     background: #434343;
+    background-position: center;
+    background-size: cover;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   }
 
@@ -45,6 +47,15 @@
         color: #ccc;
         font-weight: normal;
       }
+    }
+
+    .chat-expand-message {
+      // struct
+      font-size: 12px;
+      padding-bottom: 10px;
+      // style
+      color: #ccc;
+      text-align: center;
     }
 
     .chat-message-text {

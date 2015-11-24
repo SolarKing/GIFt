@@ -1,0 +1,16 @@
+<div class="create-GIFt">
+  <div class="type-message">
+    <div class="type-message-logo">
+      <span class="icon-pencil2"></span>
+    </div>
+    <div class="type-message-text">
+      {{input placeholder="Type message here..." value=message}}
+    </div>
+    <button class="type-message-submit" {{action "send_message"}}>Send</button>
+  </div>
+  <div class="select-gift">
+    {{input placeholder="Paste a url here to generate a GIFt..." value=media_url}}
+    {{message}}
+    {{media_url}}
+  </div>
+</div>

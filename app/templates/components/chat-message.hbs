@@ -1,0 +1,27 @@
+
+<div class="chat-message" {{action "unwrap"}}>
+  <div class="chat-message-avatar" style={{profileStyle}}>
+  </div>
+  <div class="chat-message-content">
+    <div class="chat-message-info">
+      <div class="username">{{username}}</div>
+      <div class="timestamp">{{timestamp}}</div>
+    </div>
+    <div class="chat-message-text">
+      <!-- {{message}} -->
+      {{yield}}
+    </div>
+    {{#if media}}
+      {{#if is_unwrapped}}
+        <div class="chat-message-media">
+          <!-- <img src="http://38.media.tumblr.com/f0bda0f886f25fe46db495c7620e2adf/tumblr_nn53ya70CN1suu3yio1_500.gif" alt="" /> -->
+          <img src={{media}} alt="" />
+        </div>
+      {{else}}
+        <div class="chat-expand-message">
+          Click to unwrap GIFt.
+        </div>
+      {{/if}}
+    {{/if}}
+  </div>
+</div>

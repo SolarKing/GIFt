@@ -4,102 +4,50 @@
 <main id="chat-main-view">
   <div id="chat-messages">
 
-
-
-    <div class="chat-message">
-      <div class="chat-message-avatar">
-        <img src="" alt="" />
-      </div>
-      <div class="chat-message-content">
-        <div class="chat-message-info">
-          <div class="username">Username</div>
-          <div class="timestamp">4:14</div>
-        </div>
-        <div class="chat-message-text">
-          This is some message that will appear.
-          This is some very long text paragraph thing!
-        </div>
-        <div class="chat-message-media">
-          <img src="http://38.media.tumblr.com/f0bda0f886f25fe46db495c7620e2adf/tumblr_nn53ya70CN1suu3yio1_500.gif" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="chat-message">
-      <div class="chat-message-avatar">
-        <img src="" alt="" />
-      </div>
-      <div class="chat-message-content">
-        <div class="chat-message-info">
-          <div class="username">Username</div>
-          <div class="timestamp">4:14</div>
-        </div>
-        <div class="chat-message-text">
-          This is some message that will appear.
-          This is some very long text paragraph thing!
-        </div>
-        <div class="chat-message-media">
-          <img src="http://www.sharegif.com/wp-content/uploads/2014/04/idgaffunny-gifreaction-gifbarack-obama.gif" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="chat-message">
-      <div class="chat-message-avatar">
-        <img src="" alt="" />
-      </div>
-      <div class="chat-message-content">
-        <div class="chat-message-info">
-          <div class="username">Username</div>
-          <div class="timestamp">4:14</div>
-        </div>
-        <div class="chat-message-text">
-          This is some message that will appear.
-          This is some very long text paragraph thing!
-        </div>
-        <div class="chat-message-media">
-          <img src="http://ak-hdl.buzzfed.com/static/2014-02/enhanced/webdr05/24/17/anigif_enhanced-buzz-7762-1393280507-10.gif" alt="" />
-        </div>
-      </div>
-    </div>
-
-    <div class="chat-message">
-      <div class="chat-message-avatar">
-        <img src="" alt="" />
-      </div>
-      <div class="chat-message-content">
-        <div class="chat-message-info">
-          <div class="username">Username</div>
-          <div class="timestamp">4:14</div>
-        </div>
-        <div class="chat-message-text">
-          This is some message that will appear.
-          This is some very long text paragraph thing!
-        </div>
-        <div class="chat-message-media">
-          {{!-- <img src="http://ak-hdl.buzzfed.com/static/2014-02/enhanced/webdr05/24/17/anigif_enhanced-buzz-7762-1393280507-10.gif" alt="" /> --}}
-        </div>
-      </div>
-    </div>
+    {{#each model as |message|}}
+      {{#chat-message
+          username=message.author
+          avatar_url=message.avatar_url
+          media=message.media_url
+      }}
+        {{message.message}}
+      {{/chat-message}}
+    {{/each}}
 
 
 
+    <!-- {{#chat-message
+        username="Ms. Skeptical"
+        avatar_url="https://s-media-cache-ak0.pinimg.com/originals/e2/b9/26/e2b926913fedeb2f2b248ed2bc66ec44.jpg"
+        media="http://38.media.tumblr.com/f0bda0f886f25fe46db495c7620e2adf/tumblr_nn53ya70CN1suu3yio1_500.gif"
+    }}
+      Wait...are you serious?
+    {{/chat-message}}
+
+    {{#chat-message
+        username="Somebody"
+        avatar_url="http://s3.amazonaws.com/auteurs_production/images/film/somebody-up-there-likes-me-2012/w448/somebody-up-there-likes-me-2012.jpg"
+        media="http://ak-hdl.buzzfed.com/static/2014-02/enhanced/webdr05/24/17/anigif_enhanced-buzz-7762-1393280507-10.gif"
+    }}
+      I love doggies!
+    {{/chat-message}} -->
 
   </div>
   <div class="create-GIFt">
-    <div class="select-gif">
-
-    </div>
     <div class="type-message">
       <div class="type-message-logo">
         <span class="icon-pencil2"></span>
       </div>
       <div class="type-message-text">
-        {{input placeholder="Type message here..."}}
+        {{input placeholder="Type message here..." value=message}}
       </div>
-      <button class="type-message-submit" type="button" name="button">Send</button>
+      <button class="type-message-submit" {{action "send_message"}}>Send</button>
+    </div>
+    <div class="select-gift">
+      {{input placeholder="Paste a url here to generate a GIFt..." value=media_url}}
     </div>
   </div>
+
 </main>
 
 

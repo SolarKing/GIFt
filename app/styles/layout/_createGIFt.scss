@@ -8,6 +8,26 @@
   background: white;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
 
+  .select-gift {
+    // struct
+    position: absolute;
+    top:70px;
+    bottom: 0;
+    width: 100%;
+    // style
+
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 12px;
+      // style
+      border: none;
+      border-top: thin #c4c4c4 solid;
+      border-bottom: thin #c4c4c4 solid;
+    }
+  }
+
   .type-message {
     // struct
     position: absolute;

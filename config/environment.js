@@ -24,7 +24,7 @@ module.exports = function(environment) {
       'font-src': "'self' data: https:",
       'connect-src': "'self' ws:",
       'img-src': "'self' http: https:",
-      'style-src': "'self' https:",
+      'style-src': "'self' https: 'unsafe-inline'",
       'media-src': "'self'"
     }
   };
